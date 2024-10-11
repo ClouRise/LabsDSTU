@@ -12,9 +12,12 @@ print("z = " + str(z))
 
 x = int(input())
 if x < -2:
-    y = (sin(6*x**3))/4*x - x**4
+    if(4*x-x**4!=0):
+        y = (sin(6*x**3))/4*x - x**4
 elif x >= 3:
-    y = ((2*x**3+4)/5*x**2-2)*tan(2*x+1)
+    if (5*x**2-2 != 0):
+        y = ((2*x**3+4)/5*x**2-2)*tan(2*x+1)
 else:
-    y = (2*log(x - 1) - exp(x))/8*x+x**2
+    if (8*x+x**2 != 0):
+        y = (2*log(x - 1) - exp(x))/8*x+x**2
 print(y)
