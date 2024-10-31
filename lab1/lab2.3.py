@@ -3,15 +3,18 @@
 
 
 
-n = int(input("введите n  "))
+n = float(input("введите n  "))
 if n < 0:
     print("по условию n > 0")
+elif int(n)!=n:
+    print("n должно быть целым")
+else:
+    n = int(n)
+    #нормальное решение
+    for k in range(n):
+        if(k*k>n):
+            print (k)
+            break
 
-#нормальное решение
-for k in range(n):
-    if(k*k>n):
-        print (k)
-        break
-
-#наглое)
-print(int(n**(0.5))+1)
+    #ну или так
+    print("наименьшее целое положительное k =",int(n**(0.5))+1)

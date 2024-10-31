@@ -9,4 +9,5 @@ def find2(n):
 n = int(input("введите n  "))
 if n < 0:
     print("по условию n > 0")
-print(find2(n))
+else:
+    print("Ответ:", find2(n))

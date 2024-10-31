@@ -8,4 +8,4 @@ for x in range(x0,x1+dx,dx):
     if x<0: z = x*x
     elif (x>0)and(x<=1): z = sin(x)
     else: z = cos(x)
-    print(z)  
+    print("z =", z)  
