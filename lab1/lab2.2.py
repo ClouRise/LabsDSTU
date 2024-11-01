@@ -6,8 +6,15 @@ def find2(n):
             n = n//10
     return "FALSE"
 
-n = int(input("введите n  "))
-if n < 0:
-    print("по условию n > 0")
+n = (input("введите n  "))
+try:
+    n = float(n)
+except(ValueError):
+      print("n должно быть числом")
 else:
-    print("Ответ:", find2(n))
+    if n < 0:
+        print("по условию n > 0")
+    elif int(n)!=n:
+        print("n должно быть целым")
+    else:
+        print("Ответ:", find2(int(n)))
