@@ -19,6 +19,9 @@ else:
         except(ValueError):
             print("dx должно быть числом")
         else:
+            x0 = float(x0)
+            x1 = float(x1)
+            dx = float(dx)
             z = 0
             for x in arange(x0,x1+dx,dx):
                 if x<0: z = x*x
