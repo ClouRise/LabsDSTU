@@ -15,7 +15,6 @@ def splt(s):
             else:
                 r += 1
                 break
-        print(r)
     t=0 
     for g in range(len(a)):
         if(a[g] != ''):
@@ -39,8 +38,8 @@ cc = 0
 for i in range(len(f)):
     c=0
     for j in f[i]:
-        if(j=='a'):
+        if(j=='а') or (j=='a'):
             c+=1
             if(c==2):
                 cc+=1
-print("количество слов",cc)
+print("количество слов где а входит не менее двух раз",cc)
