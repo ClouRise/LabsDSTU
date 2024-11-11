@@ -15,7 +15,6 @@ def splt(s):
             else:
                 r += 1
                 break
-        print(r)
     t=0 
     for g in range(len(a)):
         if(a[g] != ''):
