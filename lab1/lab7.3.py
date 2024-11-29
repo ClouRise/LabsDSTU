@@ -9,5 +9,7 @@ Capitals = {
 stroka = list(map(str.capitalize, input("Введите текст с названием страны: ").split()))
 print(stroka)
 for s in stroka:
-    if s in Capitals: print("Столица", s, "-",Capitals[s])
+    if(s in Capitals):
+        print(Capitals[s])
+
 
