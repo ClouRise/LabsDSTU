@@ -1,4 +1,4 @@
-def t_ry(N):
+def t_ry(N): #проверяем является ли числом 
     try:
         N = int(N)
     except:
@@ -6,17 +6,17 @@ def t_ry(N):
     else:
         return True
     
-def natural(N):
+def natural(N): #проверяем является ли натуральным
     if t_ry(N) and int(N)>0: return True
     else: 
         print("нужно ввести натуральное число")
         return False
 
-def prnt(N):
-    if not natural(N): return False
+def prnt(n,List): #возвращает список цифр
+    if len(n)==0: return List
     else:
-        for i in range(1,len(N)+1):
-            print(N[-i], end=' ')
+        List.append(n[-1])
+        return prnt (n[:-1], List)
 
 N = input("введите натуральное число N:  ")
-prnt(N)
+if natural(N): print("цифры в обратном порядке: " + " ".join(prnt(N, [])))
