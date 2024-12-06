@@ -7,10 +7,10 @@ X = input("введите число X:  ")
 Y = input("введите число Y:  ")
 
 try:
-    A = int(A)
-    B = int(B)
-    X = int(X)
-    Y = int(Y)
+    A = float(A)
+    B = float(B)
+    X = float(X)
+    Y = float(Y)
 except:
     print("нужно ввести числа")
 else:
