@@ -5,16 +5,12 @@ def SumRange(A,B):
         sum += i
     return sum
 
-A = input("введите число A:  ")
-B = input("введите число B:  ")
-C = input("введите число C:  ")
-
 try:
-    A = int(A)
-    B = int(B)
-    C = int(C)
+    A = int(input("введите число A:  "))
+    B = int(input("введите число B:  "))
+    C = int(input("введите число C:  "))
 except:
     print("нужно ввести целые числа")
 else:
     print("сумма от A до B", SumRange(A,B))
-    print("сумма от B до C", SumRange(B,C))
+    print("сумма от B до C", SumRange(B,C))3
