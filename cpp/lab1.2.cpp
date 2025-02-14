@@ -2,26 +2,17 @@
 #include <cmath>
 #include <string>
 using namespace std;
-int ww(string t)
-{
-    for (int a = 0; a < t.size();a++)
-    {
-        if (isdigit(t.at(a)) == 0)
-        {
-            cout << "нужно ввести число" << endl;
-            return 0;
-        }
-    }
-}
-
 int man()
 {
     setlocale(LC_ALL, "");
-    string z;
+    int zz;
     cout << "введите z: ";
-    cin >> z;
-    if (ww(z) == 0) { return 0; }
-    int zz{ stoi(z) };
+    cin >> zz;
+    if (cin.fail())
+    {
+        cout << "введите число" << endl;
+        return 0;
+    }
     double f;
 
     if (zz>0)
