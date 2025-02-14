@@ -1,0 +1,3 @@
+﻿  lab1.2.cpp
+C:\Users\OptimusPrime\Documents\GitHub\LabsDSTU\cpp\lab1.2.cpp(15,1): warning C4715: ww: значение возвращается не при всех путях выполнения
+  cpp.vcxproj -> C:\Users\OptimusPrime\Documents\GitHub\LabsDSTU\cpp\x64\Debug\cpp.exe
