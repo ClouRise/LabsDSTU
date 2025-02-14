@@ -6,11 +6,23 @@ int w(string t)
 {
     for (int a = 0; a < t.size();a++)
     {
-        if (isdigit(t.at(a)) == 0)
+        if (a == 0)
         {
-            cout << "нужно ввести число" << endl;
-            return 0;
+            if (t.at(0) != '-' && isdigit(t.at(a)) == 0)
+            {
+                cout << "нужно ввести число" << endl;
+                return 0;
+            }
         }
+        else
+        {
+            if (isdigit(t.at(a)) == 0)
+            {
+                cout << "нужно ввести число" << endl;
+                return 0;
+            }
+        }
+
     }
 }
 
