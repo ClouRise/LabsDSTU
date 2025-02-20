@@ -1,58 +1,64 @@
 ﻿#include <iostream>
-#include <cmath>
-#include <string>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
 int main()  
 {   
-    setlocale(LC_ALL, "");
-    //---------------------------------------------------------------------------------------
-    //float z, y;
-    //cout << "введите z: ";
-    //cin >> z;
-    //if(cin.fail())
-    //{
-    //    cout << "введите число" << endl;
-    //    return 0;
-    //}
-    //cout << "введите y: ";
-    //cin >> y;
-    //if (cin.fail())
-    //{
-    //    cout << "введите число" << endl;
-    //    return 0;
-    //}
-    //cout << -pow(z,y)+pow(y,z) << endl;
-    //---------------------------------------------------------------------------------------
-    //int zz;
-    //cout << "введите z: ";
-    //cin >> zz;
-    //if (cin.fail())
-    //{
-    //    cout << "введите число" << endl;
-    //    return 0;
-    //}
-    //double f;
+   setlocale(LC_ALL, "");
 
-    //if (zz > 0)
-    //{
-    //    f = 3 * pow(zz, 3) * pow(zz, 0.5) - 5 * pow(zz, 5);
-    //    cout << f;
-    //    return 0;
-    //}
-    //if (zz == 0)
-    //{
-    //    f = cos(2 * pow(zz, 3) - 1) + 5 * pow(zz, 5);
-    //    cout << f;
-    //    return 0;
-    //}
-    //if (zz < 0)
-    //{
-    //    f = (3 * pow(zz, 2) + sin(pow(zz, 3) - 3)) / 5;
-    //    cout << f;
-    //    return 0;
-    //}
-    //return 0;
-    //---------------------------------------------------------------------------------------
-}
+
+   //int A[10] = {};
+
+   //int* b;
+   //b = A;
+   //int minEl = *b;
+   //int *a = b;
+   //srand(time(NULL));
+   //for (int p = 0; p < 10; p++)
+   //{
+	  // *(b + p) = rand();
+	  // cout << *(b + p) << endl;
+   //}
+   //for (int j = 0; j < 10;j++)
+   //{
+	  // if(minEl > *(b+j))
+	  // {
+		 //  minEl = *(b + j);
+		 //  a = (b + j);
+	  // }
+   //}
+   //int t = *(b + 9);
+   //*(b + 9) = *a;
+   //*a = t;
+   //cout << "новый массив:" << " ";
+   //for (int k = 0; k < 10; k++)
+   //{
+	  // cout << *(b+k) << " ";
+   //}
+   //cout << endl;
+
+
+//
+//	float A[10] = {};
+//
+//	float* b;
+//	b = A;
+//	float minEl = *b;
+//	float *a = b;
+//	float sum = 0;
+//	srand(time(NULL));
+//	for (int p = 0; p < 10; p++)
+//	{
+//		*(b+p) = 1.0 + 4.0 * rand() / (float)RAND_MAX-1;
+//		cout << *(b + p) << endl;
+//		if (*(b+p)>=0)
+//		{
+//			sum += *(b + p);
+//		}
+//	}
+//	cout << "сумма:" << sum << endl;
+	}
 //ctrl+k + ctrl+c - закомментировать
 //ctrl+k + ctrl+u - раскоммент.
+
+
