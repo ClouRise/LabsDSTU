@@ -16,7 +16,7 @@ int main()
    //srand(time(NULL));
    //for (int p = 0; p < 10; p++)
    //{
-	  // *(b + p) = rand();
+	  // *(b + p) = rand() % 20 - 10;
 	  // cout << *(b + p) << endl;
    //}
    //for (int j = 0; j < 10;j++)
@@ -26,7 +26,9 @@ int main()
 		 //  minEl = *(b + j);
 		 //  a = (b + j);
 	  // }
+	  // 
    //}
+   //cout << "наименьший " << minEl << endl;
    //int t = *(b + 9);
    //*(b + 9) = *a;
    //*a = t;
@@ -38,25 +40,27 @@ int main()
    //cout << endl;
 
 
-//
-//	float A[10] = {};
-//
-//	float* b;
-//	b = A;
-//	float minEl = *b;
-//	float *a = b;
-//	float sum = 0;
-//	srand(time(NULL));
-//	for (int p = 0; p < 10; p++)
-//	{
-//		*(b+p) = 1.0 + 4.0 * rand() / (float)RAND_MAX-1;
-//		cout << *(b + p) << endl;
-//		if (*(b+p)>=0)
-//		{
-//			sum += *(b + p);
-//		}
-//	}
-//	cout << "сумма:" << sum << endl;
+
+	float A[10] = {};
+
+	float* b;
+	b = A;
+	float minEl = *b;
+	float *a = b;
+	float sum = 0;
+	srand(time(NULL));
+	int count = 0;
+	for (int p = 0; p < 10; p++)
+	{
+		*(b+p) = -1.0 + 4.0 * rand() / (float)RAND_MAX-1;
+		cout << *(b + p) << endl;
+		if (*(b+p)>=0)
+		{
+			sum += *(b + p);
+			count += 1;
+		}
+	}
+	cout << "сумма:" << sum << " " << count << endl;
 	}
 //ctrl+k + ctrl+c - закомментировать
 //ctrl+k + ctrl+u - раскоммент.
